@@ -1,0 +1,28 @@
+ changeh1
+{
+    font-size: 2.5em; 
+    color: hsl(0, 65%, 51%);
+}
+body
+{
+    background-color: hsl(218, 79%, 66%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.buttons
+{
+    margin-top: 20px;
+}  
+.yes-button, .no-button
+{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
