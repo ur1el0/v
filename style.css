@@ -1,28 +1,70 @@
- changeh1
+h1
 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
     color: hsl(0, 65%, 51%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 body
 {
     background-color: hsl(218, 79%, 66%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
+    font-family: "Google Sans", sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .buttons
 {
     margin-top: 20px;
-}  
+    position: relative;
+}
 .yes-button, .no-button
 {
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 0 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.yes-button
+{
+    background-color: darkgreen;
+    color: white;
+}
+.yes-button:hover
+{
+    background-color: #006400;
+    transform: scale(1.05);
+}
+.no-button
+{
+    background-color: darkred;
+    color: white;
+}
+.no-button:hover
+{
+    background-color: #8b0000;
+    transform: scale(1.05);
+}
+.gif-container
+{
+    margin-top: 20px;
+}
+.gif-container img
+{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
