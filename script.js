@@ -14,9 +14,9 @@ const noImages =
 ]
 const yesImages =
 [
-    "https://i.giphy.com/4N1wOi78ZGzSB6H7vK.webp",
+    "https://i.giphy.com/12vXrAZhMazV7y.webp",
     "https://i.giphy.com/jNJW9Bj6vVXIERUgK3.webp",
-    "https://i.giphy.com/qFmdpUKAFZ6rMobzzu.webp",
+    "https://i.giphy.com/KmxmoHUGPDjfQXqGgv.webp",
     "https://i.giphy.com/7W1rgKAxlDe3m.webp"
 ]
 
@@ -35,7 +35,7 @@ yesButton.addEventListener("click", () => {
         head.textContent = yesMessages[yesMessageIndex];
         yesMessageIndex++;
         const currentSize = parseFloat(window.getComputedStyle(head).fontSize);
-        head.style.fontSize = `${currentSize * 1.6}px`;
+        head.style.fontSize = `${currentSize * 1}px`;
         image.src = yesImages[gifIndex];
         gifIndex = (gifIndex + 1) % yesImages.length;
     }
@@ -43,7 +43,7 @@ yesButton.addEventListener("click", () => {
     {
         head.textContent = "I knew u would say yes my langlang<3333";
         head.style.fontSize = "2.5em";
-        document.body.style.backgroundImage = `url('https://i.giphy.com/qx3d4enif4rw3t5eng.webp')`;
+        document.body.style.backgroundImage = `url('https://i.giphy.com/10l8fc00NMNJNm.webp')`;
         document.querySelector(".buttons").style.display = "none";
         yesButton.removeEventListener("click", arguments.callee);
         noButton.removeEventListener("click", arguments.callee);
